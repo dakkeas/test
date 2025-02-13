@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="background">
+    <div class="main-container">
+        <h1 class="main-title">YES? okay now press play ! (˵ ¬ᴗ¬˵)</h1>
+        <div>
+            <button class="button-text" id="play">
+                PLAY
+            </button>
+        </div>
+        <div class="gif-container">
+            <div class="tenor-gif-embed" data-postid="2236335851178412850" data-share-method="host"
+                data-aspect-ratio="1.21379" data-width="100%"><a
+                    href="https://tenor.com/view/yuimetal-gif-2236335851178412850">Yuimetal GIF</a>from <a
+                    href="https://tenor.com/search/yuimetal-gifs">Yuimetal GIFs</a></div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    var audio = new Audio('music.mp3');
+    document.getElementById('play').addEventListener('click', function () {
+        console.log("playing!")
+        audio.play();
+    });
+</script>
+
+</html>

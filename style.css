@@ -1,0 +1,61 @@
+* {
+    font-family: "Titan One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("heart.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: white;
+    border: 3px solid pink;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-title {
+    color: white;
+
+    font-size: 56px;
+}
+
+.button-text {
+    font-size: 32px;
+    color: pink;
+}
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.gif-container {
+    height: 500px;
+    width: 500px;
+}
+
+.main-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
