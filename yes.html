@@ -20,6 +20,9 @@
             <button class="button-text" id="play">
                 PLAY
             </button>
+            <button class="button-text" id="play2">
+                PLAY 2
+            </button>
         </div>
         <div class="gif-container">
             <div class="tenor-gif-embed" data-postid="2236335851178412850" data-share-method="host"
@@ -34,8 +37,15 @@
 <script>
 
     var audio = new Audio('music.mp3');
+    var audio2 = new Audio('music2.mp3')
     document.getElementById('play').addEventListener('click', function () {
         console.log("playing!")
+        audio2.currentTime = 73; // Start the audio at 50 seconds
+        audio2.play();
+    });
+    document.getElementById('play2').addEventListener('click', function () {
+        console.log("playing!")
+        
         audio.play();
     });
 </script>
